@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaEnvelope, FaExternalLinkAlt } from "react-icons/fa";
 import profilePic from "../assets/profile.png";
+import Typing from "react-typing-effect"
 
 const Home = () => {
     return (
@@ -24,9 +25,23 @@ const Home = () => {
                 </motion.h1>
 
                 {/* Typing Animation */}
-                <h2 className="text-xl sm:text-2xl font-medium text-gray-700 dark:text-gray-300">
-                    Learning. Building. Evolving.
-                </h2>
+                <div className="text-xl sm:text-2xl font-medium text-gray-700 dark:text-gray-300">
+                    <Typing
+                        text={[
+                            "Learning. Building. Evolving.",
+                            "Exploring new technologies with curiosity",
+                            "Web Developer",
+                            "Problem Solver"
+                        ]}
+                        speed={100}
+                        eraseSpeed={50}
+                        eraseDelay={2000}
+                        typingDelay={500}
+                        loop={true}
+                        className="font-semibold text-blue-600 dark:text-blue-400"
+                    />
+                </div>
+
 
                 {/* Project Link */}
                 <motion.div whileHover={{ scale: 1.05 }}>
