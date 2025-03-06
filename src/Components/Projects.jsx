@@ -16,7 +16,7 @@ const projects = [
     techStack: ["React", "Node.js", "Express", "MongoDB", "JWT Authentication"],
     image: "/inotebook.png",
     code: "https://github.com/Vignesh07s/inotebook",
-    demo: "https://inotebook-app.vercel.app",
+    demo: "https://inotebook777.vercel.app",
   },
 ];
 
