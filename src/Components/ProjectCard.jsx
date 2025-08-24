@@ -19,17 +19,25 @@ const ProjectCard = ({ project }) => {
       </div>
 
       {/* Project Details */}
-      <div className="px-4 py-3 flex flex-col flex-grow">
+      <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-bold text-gray-900 dark:text-white">{project.title}</h3>
-        {/* === THE CHANGE IS HERE === */}
         <p className="mt-2 text-gray-700 dark:text-gray-300 text-sm line-clamp-3">
           {project.description}
         </p>
 
-        {/* This div will now push the content below it to the bottom */}
         <div className="flex-grow"></div>
 
-        {/* Links */}
+        <div className="mt-4 flex flex-wrap gap-2">
+          {project.techStack.map((tech, i) => (
+            <span
+              key={i}
+              className="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 text-xs font-medium px-3 py-1 rounded-full"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+
         <div className="flex justify-start items-center space-x-4 mt-6">
           {project.code && (
             <a

@@ -29,14 +29,13 @@ const projects = [
     title: "Systech Consultancy - Admin Dashboard",
     description: "A comprehensive admin panel to manage the consultancy platform. Features secure, role-based login, full CRUD functionality for workshops, and detailed views for booking history and monthly analytics with dynamic charts.",
     techStack: ["Next.js", "React", "Tailwind CSS", "Chart.js", "Node.js", "Express", "MongoDB"],
-    image: "/systech-admin.png",
-    // Source code and live demo links removed
+    image: "/AdminDashboard.png",
   }
 ];
 
 const Projects = () => {
   return (
-    <div className="container mx-auto py-4 px-16 bg-gray-100 dark:bg-gray-900 min-h-screen">
+    <div className="container mx-auto py-8 px-4 md:px-16 bg-gray-100 dark:bg-gray-900 min-h-screen">
       {/* Section Title */}
       <h1 className="text-3xl font-bold text-center text-blue-600 dark:text-blue-300 mb-6">
         My Projects
